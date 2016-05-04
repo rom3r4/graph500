@@ -1,4 +1,26 @@
-[TOC]
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Requirements](#requirements)
+- [Download](#download)
+  - [Using git](#using-git)
+  - [Using gz](#using-gz)
+- [Build](#build)
+- [Run](#run)
+- [Scripts](#scripts)
+  - [Script r-ify.sh](#script-r-ifysh)
+  - [Script r-compare.sh](#script-r-comparesh)
+  - [Script check-all.sh (requires SLURM)](#script-check-allsh-requires-slurm)
+- [Profiling](#profiling)
+- [Current Limitations](#current-limitations)
+  - [Out-Of-Memory errors and CUDA memory size limitations:](#out-of-memory-errors-and-cuda-memory-size-limitations)
+- [Troubleshooting](#troubleshooting)
+- [Author](#author)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 # Requirements
 
