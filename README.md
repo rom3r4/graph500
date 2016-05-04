@@ -33,29 +33,30 @@
 
 # Download
 
-- Create an account in [https://bitbucket.org](https://bitbucket.org)
+- Create an account in [https://github.com](https://github.com)
 
 
 ## Using git
 
-- Use your Bitbucket username account name as  ___Your_Bitbucket___
+- Use your Bitbucket username account name as  __Your_GITHUB__
 
-- [https://___Your_Bitbucket___@bitbucket.org/jyoung3131/bfs_multinode.git](https://___Your_Bitbucket___@bitbucket.org/jyoung3131/bfs_multinode.git)
+- [https://github.com/__Your_GITHUB__/UniHD-CEG/graph500.git](https://github.com/___Your_GITHUB___/UniHD-CEG/graph500.git)
 
 - install `git`
 
-- Clone the branch `architectural_tuning`,
+- Fork the main repository, into your account 
+- Clone from your account
 
 ```
-$ # REPLACE ___Your_Bitbucket___
-$ git clone -b architectural_tuning https://___Your_Bitbucket___@bitbucket.org/jyoung3131/bfs_multinode.git
+$ # REPLACE __Your_GITHUB__
+$ git clone https://github.com/__Your_GITHUB__/UniHD-CEG/graph500.git
 $ cd bfs_multinode
 ```
 
-## Using gz
+## Using tar
 
 - Download from:
-[latest .gz](https://bitbucket.org/jyoung3131/bfs_multinode/get/architectural_tuning.tar.gz)
+[latest .gz](https://github.com/UniHD-CEG/graph500/archive/master.zip)
 
 - Decompress:
 
