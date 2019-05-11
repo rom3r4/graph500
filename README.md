@@ -1,5 +1,5 @@
 # graph500
-## moved to: https://github.com/UniHD-CEG/gpugraph500
+### Moved to: https://github.com/UniHD-CEG/gpugraph500
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
