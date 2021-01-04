@@ -1,5 +1,5 @@
-# graph500
-## Moved to: https://github.com/UniHD-CEG/gpugraph500
+## GPU Graph500
+**Moved to: https://github.com/UniHD-CEG/gpugraph500**
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
@@ -24,7 +24,7 @@
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
-# Requirements
+### Requirements
 
 - C compiler. C++ Compiler with c++11 support.
 - To use CUDA-BFS or CUDA-compression: CUDA 6+ support.
@@ -32,12 +32,12 @@
 - To use SIMD+ compression SSE2 support.
 
 
-# Download
+### Downloading
 
 - Create an account in [https://github.com](https://github.com)
 
 
-## Using git
+**Using git**
 
 - Use your Bitbucket username account name as  __Your_GITHUB__
 
@@ -54,7 +54,7 @@ $ git clone https://github.com/__Your_GITHUB__/UniHD-CEG/graph500.git
 $ cd bfs_multinode
 ```
 
-## Using tar
+**Using tar**
 
 - Download from:
 [latest .gz](https://github.com/UniHD-CEG/graph500/archive/master.zip)
@@ -66,7 +66,7 @@ $ tar -xzvf architectural_tuning.tar.gz
 $ cd architectural_tuning
 ```
 
-# Build
+### Building
 
 The code to compile is in the folder `cpu_2d/`. to build the binary:
 
@@ -77,7 +77,7 @@ make
 
 for options, run `./configure --help`
 
-# Run
+### Executing
 
 Change to folder `eval/`
 
@@ -96,7 +96,7 @@ sbatch o16p8n.rsh 21
 runs a test with 16 proccesses in 8 nodes, using Scale Factor 21
 
 
-# Scripts
+### Scripts
 
 * r-ify.sh
 * r-compare.sh
@@ -115,7 +115,7 @@ $ chmod u+x *.sh
 ```
 
 
-## Script r-ify.sh
+**Script r-ify.sh**
 
 It uses the execution traces to generate R-code. This R-code (once run) shows the time measurements of the Phases of the BFS code. This script uses result files with same Scale Factor. The results are represented as a Barplot.
 
@@ -134,7 +134,7 @@ Enter a total 3 label(s) between quoutes. Separate them with spaces: "4p2n-Ropti
 
 Open the file `file-423-424-425.r` with your R editor and run the code.
 
-## Script r-compare.sh
+**Script r-compare.sh**
 
 As the previous script, this also uses the execution traces to generate R-code. This differs from the previous one in that it can compare several files from several Scale Factors. Results are visualized as a Lineplot.
 
@@ -143,7 +143,7 @@ As the previous script, this also uses the execution traces to generate R-code. 
 $ ./r-compre.sh JOBID1 JOBID2 ...
 ```
 
-## Script check-all.sh (requires SLURM)
+**Script check-all.sh (requires SLURM)**
 
 This script automatizes the execution of tests for different Scale Factors.
 
@@ -154,7 +154,7 @@ $ check-all.sh 15 30
 This will run the tests with format `o*.rsh` in the `eval/` folder for Scale Factors 15 to 30. Process is shown in ncurses-like format.
 
 
-# Profiling
+### Profiling
 
 This BFS application allows the code to be instrumented in Zones using Score-P with very low overhead. This requires Score-P and Scalasca to be installed in the system. The results may be analyzed either visually (using CUBE) or through console using `scorep-score`.
 
@@ -224,9 +224,9 @@ $ cd eval/scorep-____FOLDER_NAME____
 $ scorep-score -r profile.cubex
 ```
 
-# Current Limitations
+### Current Limitations
 
-## Out-Of-Memory errors and CUDA memory size limitations:
+**Out-Of-Memory errors and CUDA memory size limitations:**
 
 For some high Score-Factors (e.g: 22, as of the day of writing this guide), the resulting Slurm trace will be:
 
@@ -258,7 +258,7 @@ with errorcode 1.
 ```
 
 
-# Troubleshooting
+### Troubleshooting
 - Problem: In the .out file of Slurm/ Sbatch execution I get the text:
 
 ```
@@ -275,11 +275,11 @@ Disable it with:
 $ export G500_ENABLE_RUNTIME_SCALASCA=no
 ```
 
-# Author
+### Author
 
-Computer Engineering Group at Ruprecht-Karls University of Heidelberg
+Computer Engineering Group - Ruprecht-Karls University of Heidelberg
 
-# License
+### LICENSE
 
 Copyright (c) 2016, Computer Engineering Group at Ruprecht-Karls University of Heidelberg, Germany. All rights reserved.
 
